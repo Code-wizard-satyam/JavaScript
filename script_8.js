@@ -1,1 +1,2 @@
-console.log("Hello!");
+let ele = document.querySelector("div");
+console.dir(ele);
