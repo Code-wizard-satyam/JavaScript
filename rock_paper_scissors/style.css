@@ -46,12 +46,20 @@ body{
     width: 900px;
     margin-top: 100px;
     font-size: 25px;
-    color: #8acb88;
+    color: #ffffff;
     background-color: #575761;
     border-radius: 25px;
     padding-top: 10px;
+    justify-items: center;
+    align-items: center;
 }
 
 .resultClass{
-    justify-items: center;
+    justify-items: center;  
+}
+
+h3{
+    margin-top: 50px;
+    color: #FFBF46;
+    visibility: hidden;
 }
