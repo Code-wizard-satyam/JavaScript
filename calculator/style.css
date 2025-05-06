@@ -31,6 +31,13 @@ main{
     align-items: center;
 }
 
+#mainDisplay{
+    padding-top: 25px;
+    padding-right: 10px;
+    color: white;
+    font-size: 45px;
+}
+
 .buttonClass{
     width: 260px;
     height: 300px;
@@ -47,4 +54,30 @@ main{
     background-color: #DDA853;
     font-size: 22px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#equals{
+    width: 115px;
+}
+
+#add{
+    background-color: #46af32;
+}
+#subtract{
+    background-color: #46af32;
+}
+#multiply{
+    background-color: #46af32;
+}
+#divide{
+    background-color: #46af32;
+}
+#allClr{
+    background-color: #e14941;
+}
+#del{
+    background-color: #e14941;
+}
+#equals{
+    background-color: #41e1a4;
 }
