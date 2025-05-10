@@ -1,32 +1,35 @@
-// // Async, Callback and promises
+// Async, Callback and promises
 
 
-// console.log("One");
-// console.log("Two");
-// function hello(){
-//     console.log("Hello");
-// };
-// setTimeout(hello, 2000);   // 2 sec = 2000 msec
+console.log("One");
+console.log("Two");
+function hello(){
+    console.log("Hello");
+};
+setTimeout(hello, 2000);   // 2 sec = 2000 msec
 
-// console.log("Three");
-// console.log("Four");
+console.log("Three");
+console.log("Four");
 
-// // Callback
-// function sum(a,b){
-//     console.log(a+b);
-// };
-// function calculator(a,b,sumCallback){
-//     sumCallback(a,b);
-// };
-// calculator(1,2,sum);
+// Callback
+function sum(a,b){
+    console.log(a+b);
+};
+function calculator(a,b,sumCallback){
+    sumCallback(a,b);
+};
+calculator(1,2,sum);
 
 function getData(dataId, getNextData) {
-    setTimeout(() => {
-        console.log("Data ", dataId);
-        if(getNextData){
-            getNextData();
-        };
-    }, 2000);
+    return new Promise((resolve,reject) =>{
+        setTimeout(() => {
+            console.log("Data ", dataId);
+            resolve("Sucess")
+            if(getNextData){
+                getNextData();
+            };
+        }, 2000);
+    });
 };
 
 
